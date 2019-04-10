@@ -42,14 +42,13 @@ extends
     @Id
     @Column(name = "USER_TYPE")
     private String userType;
-
     //-------------------------------------------------------------------------
 	public String getUserType() {
 		return userType;
 	}
 
-	public void setUserType(String p_serviceCode) {
-		userType = p_serviceCode;
+	public void setUserType(String userType) {
+		this.userType = userType;
 	}
 	//-------------------------------------------------------------------------
 }

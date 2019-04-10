@@ -51,31 +51,31 @@ extends
     @OneToOne
     @JoinColumn(name = "USER_TYPE")
     private UserType userType;
-
     //-------------------------------------------------------------------------
-    public String getMenuCode() {
+	public String getMenuCode() {
 		return menuCode;
 	}
 
-	public void setMenuCode(String p_menuCode) {
-		menuCode = p_menuCode;
+	public void setMenuCode(String menuCode) {
+		this.menuCode = menuCode;
 	}
 
 	public String getMenuName() {
 		return menuName;
 	}
 
-	public void setMenuName(String p_menuName) {
-		menuName = p_menuName;
+	public void setMenuName(String menuName) {
+		this.menuName = menuName;
 	}
 
 	public UserType getUserType() {
 		return userType;
 	}
 
-	public void setUserType(UserType p_serviceCode) {
-		userType = p_serviceCode;
+	public void setUserType(UserType userType) {
+		this.userType = userType;
 	}
+    //-------------------------------------------------------------------------
 }
 //-----------------------------------------------------------------------------
 //End of file

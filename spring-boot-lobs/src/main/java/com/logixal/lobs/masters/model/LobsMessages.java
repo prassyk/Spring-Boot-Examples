@@ -45,23 +45,23 @@ extends
 
     @Column(name = "LOBS_MESSAGE_NAME")
     private String messageName;
-
     //-------------------------------------------------------------------------
 	public String getMessageCode() {
 		return messageCode;
 	}
 
-	public void setMessageCode(String p_propCode) {
-		messageCode = p_propCode;
+	public void setMessageCode(String messageCode) {
+		this.messageCode = messageCode;
 	}
 
 	public String getMessageName() {
 		return messageName;
 	}
 
-	public void setMessageName(String p_propValue) {
-		messageName = p_propValue;
+	public void setMessageName(String messageName) {
+		this.messageName = messageName;
 	}
+    //-------------------------------------------------------------------------
 }
 //-----------------------------------------------------------------------------
 // End of file

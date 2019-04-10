@@ -45,23 +45,23 @@ extends
 
     @Column(name = "SERVICE_NAME")
     private String serviceName;
-
-    //-------------------------------------------------------------------------
-	public String getServiceCode() {
+    //-------------------------------------------------------------------------    
+    public String getServiceCode() {
 		return serviceCode;
 	}
 
-	public void setServiceCode(String p_serviceCode) {
-		serviceCode = p_serviceCode;
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
 
 	public String getServiceName() {
 		return serviceName;
 	}
 
-	public void setServiceName(String p_serviceName) {
-		serviceName = p_serviceName;
+	public void setServiceName(String serviceName) {
+		this.serviceName = serviceName;
 	}
+	//-------------------------------------------------------------------------
 }
 //-----------------------------------------------------------------------------
 //End of file

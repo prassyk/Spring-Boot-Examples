@@ -45,23 +45,23 @@ extends
 
     @Column(name = "PROP_VALUE")
     private String propValue;
-
     //-------------------------------------------------------------------------
 	public String getPropCode() {
 		return propCode;
 	}
 
-	public void setPropCode(String p_propCode) {
-		propCode = p_propCode;
+	public void setPropCode(String propCode) {
+		this.propCode = propCode;
 	}
 
 	public String getPropValue() {
 		return propValue;
 	}
 
-	public void setPropValue(String p_propValue) {
-		propValue = p_propValue;
+	public void setPropValue(String propValue) {
+		this.propValue = propValue;
 	}
+    //-------------------------------------------------------------------------
 }
 //-----------------------------------------------------------------------------
 // End of file
