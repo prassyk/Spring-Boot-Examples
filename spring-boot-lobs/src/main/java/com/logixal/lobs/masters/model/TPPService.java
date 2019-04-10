@@ -34,7 +34,7 @@ import com.logixal.lobs.audit.Auditable;
 @Table(name = "MST_SERVICE")
 @Entity
 public class 
-	Services
+	TPPService
 extends
 	Auditable<String>
 {
