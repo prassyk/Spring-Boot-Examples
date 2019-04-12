@@ -21,9 +21,9 @@
  * 10-Apr-2019	1.0			Akshay		Initial Version.
  * ____________________________________________________________________________
 */
-//-----------------------------------------------------------------------------
+
 package com.logixal.lobs.masters.model;
-//-----------------------------------------------------------------------------
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -32,15 +32,11 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.logixal.lobs.audit.Auditable;
-//-----------------------------------------------------------------------------
+
 @Table(name = "MST_MENU")
 @Entity
-public class 
-	Menu
-extends
-	Auditable<String>
-{
-	//-------------------------------------------------------------------------
+public class Menu extends Auditable<String> {
+	
     @Id
     @Column(name = "MENU_CODE")
     private String menuCode;
@@ -51,32 +47,47 @@ extends
     @OneToOne
     @JoinColumn(name = "USER_TYPE")
     private UserType userType;
-    //-------------------------------------------------------------------------
+    
+	/**
+	 * @return
+	 */
 	public String getMenuCode() {
 		return menuCode;
 	}
 
+	/**
+	 * @param menuCode
+	 */
 	public void setMenuCode(String menuCode) {
 		this.menuCode = menuCode;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getMenuName() {
 		return menuName;
 	}
 
+	/**
+	 * @param menuName
+	 */
 	public void setMenuName(String menuName) {
 		this.menuName = menuName;
 	}
 
+	/**
+	 * @return
+	 */
 	public UserType getUserType() {
 		return userType;
 	}
 
+	/**
+	 * @param userType
+	 */
 	public void setUserType(UserType userType) {
 		this.userType = userType;
 	}
-    //-------------------------------------------------------------------------
+    
 }
-//-----------------------------------------------------------------------------
-//End of file
-//-----------------------------------------------------------------------------

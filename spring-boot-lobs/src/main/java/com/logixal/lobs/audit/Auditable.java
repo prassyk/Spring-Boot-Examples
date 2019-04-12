@@ -23,7 +23,7 @@
 */
 //-----------------------------------------------------------------------------
 package com.logixal.lobs.audit;
-//-----------------------------------------------------------------------------
+
 import java.util.Date;
 
 import javax.persistence.EntityListeners;
@@ -36,14 +36,13 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-//-----------------------------------------------------------------------------
+
 @SuppressWarnings("hiding")
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public abstract class 
-	Auditable<String> 
+public abstract class Auditable<String> 
 {
-	//-------------------------------------------------------------------------
+
 	@CreatedBy
     protected String CREATED_BY;
 	
@@ -57,40 +56,60 @@ public abstract class
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
     protected Date UPDATED_DATE;
-	//-------------------------------------------------------------------------
+
+	/**
+	 * @return
+	 */
 	public String getCREATED_BY() {
 		return CREATED_BY;
 	}
 
+	/**
+	 * @param p_CREATED_BY
+	 */
 	public void setCREATED_BY(String p_CREATED_BY) {
 		CREATED_BY = p_CREATED_BY;
 	}
 
+	/**
+	 * @return
+	 */
 	public Date getCREATED_DATE() {
 		return CREATED_DATE;
 	}
 
+	/**
+	 * @param p_CREATED_DATE
+	 */
 	public void setCREATED_DATE(Date p_CREATED_DATE) {
 		CREATED_DATE = p_CREATED_DATE;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getUPDATED_BY() {
 		return UPDATED_BY;
 	}
 
+	/**
+	 * @param p_UPDATED_BY
+	 */
 	public void setUPDATED_BY(String p_UPDATED_BY) {
 		UPDATED_BY = p_UPDATED_BY;
 	}
 
+	/**
+	 * @return
+	 */
 	public Date getUPDATED_DATE() {
 		return UPDATED_DATE;
 	}
 
+	/**
+	 * @param p_UPDATED_DATE
+	 */
 	public void setUPDATED_DATE(Date p_UPDATED_DATE) {
 		UPDATED_DATE = p_UPDATED_DATE;
 	}
-	//-------------------------------------------------------------------------
 }
-//-----------------------------------------------------------------------------
-// End of file
-//-----------------------------------------------------------------------------

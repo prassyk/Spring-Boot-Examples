@@ -23,35 +23,34 @@
 */
 //-----------------------------------------------------------------------------
 package com.logixal.lobs.masters.model;
-//-----------------------------------------------------------------------------
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.logixal.lobs.audit.Auditable;
-//-----------------------------------------------------------------------------
+
 @Table(name = "MST_USER_TYPE")
 @Entity
-public class
-	UserType
-extends
-	Auditable<String>
-{
-	//-------------------------------------------------------------------------
+public class UserType extends Auditable<String> {
+
     @Id
     @Column(name = "USER_TYPE")
     private String userType;
-    //-------------------------------------------------------------------------
+
+	/**
+	 * @return
+	 */
 	public String getUserType() {
 		return userType;
 	}
 
+	/**
+	 * @param userType
+	 */
 	public void setUserType(String userType) {
 		this.userType = userType;
 	}
-	//-------------------------------------------------------------------------
+
 }
-//-----------------------------------------------------------------------------
-//End of file
-//-----------------------------------------------------------------------------
