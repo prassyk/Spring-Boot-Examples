@@ -21,7 +21,7 @@
  * 10-Apr-2019	1.0			Akshay		Initial Version.
  * ____________________________________________________________________________
 */
-//-----------------------------------------------------------------------------
+
 package com.logixal.lobs.masters.model;
 //-----------------------------------------------------------------------------
 import javax.persistence.Column;
@@ -30,7 +30,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.logixal.lobs.audit.Auditable;
-//-----------------------------------------------------------------------------
+
 @Table(name = "LOBS_MESSAGES")
 @Entity
 public class 

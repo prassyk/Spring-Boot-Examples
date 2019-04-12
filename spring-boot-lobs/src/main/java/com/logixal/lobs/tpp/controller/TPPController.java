@@ -26,7 +26,7 @@ public class TPPController {
 	
 	@RequestMapping(value = "/register", method = RequestMethod.POST ,consumes = "application/json", produces = "application/json")
 	@ApiOperation(value= "Initiates request for registering third party client with Open banking server")
-	public ResponseEntity<TPPUserResponse> register(
+	public ResponseEntity<Object> register(
 			@RequestBody TPPUser tppUser,
 			@ApiParam(name="clientName",value = "", required = true)  final String clientName,
 	        @ApiParam(name="clientDesc",value = "", required = true)  final String clientDesc,
