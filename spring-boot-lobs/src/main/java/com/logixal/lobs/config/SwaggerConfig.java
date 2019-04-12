@@ -49,7 +49,7 @@ public class SwaggerConfig {
 		return new ApiInfoBuilder().title("swagger API")
 				.description("swagger API reference for developers")
 				.termsOfServiceUrl("http://swagger.com")
-				.contact("swagger@gmail.com").license("Swagger License")
+				//.contact("swagger@gmail.com").license("Swagger License")
 				.licenseUrl("swagger@gmail.com").version("1.0").build();
 	}
 

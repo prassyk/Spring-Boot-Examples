@@ -21,27 +21,18 @@
  * 10-Apr-2019	1.0			Jitendra		Initial Version.
  * ____________________________________________________________________________
 */
-//-----------------------------------------------------------------------------
+
 package com.logixal.lobs.audit;
-//-----------------------------------------------------------------------------
+
 import java.util.Optional;
 
 import org.springframework.data.domain.AuditorAware;
-//-----------------------------------------------------------------------------
-public class 
-	AuditorAwareImpl 
-implements 
-	AuditorAware<String> 
-{
 
-	//-------------------------------------------------------------------------
+public class AuditorAwareImpl implements AuditorAware<String> {
+	
 	@Override
 	public Optional<String> getCurrentAuditor() {
 		String name = "User7";
 	    return Optional.of(name);
 	}
-	//-------------------------------------------------------------------------
 }
-//-----------------------------------------------------------------------------
-// End of file
-//-----------------------------------------------------------------------------

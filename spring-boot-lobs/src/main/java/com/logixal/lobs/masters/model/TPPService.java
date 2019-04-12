@@ -21,48 +21,53 @@
  * 10-Apr-2019	1.0			Akshay		Initial Version.
  * ____________________________________________________________________________
 */
-//-----------------------------------------------------------------------------
+
 package com.logixal.lobs.masters.model;
-//-----------------------------------------------------------------------------
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.logixal.lobs.audit.Auditable;
-//-----------------------------------------------------------------------------
+
 @Table(name = "MST_SERVICE")
 @Entity
-public class 
-	TPPService
-extends
-	Auditable<String>
-{
-	//-------------------------------------------------------------------------
+public class TPPService extends Auditable<String> {
+	
     @Id
     @Column(name = "SERVICE_CODE")
     private String serviceCode;
 
     @Column(name = "SERVICE_NAME")
     private String serviceName;
-    //-------------------------------------------------------------------------    
+        
+    /**
+     * @return
+     */
     public String getServiceCode() {
 		return serviceCode;
 	}
 
+	/**
+	 * @param serviceCode
+	 */
 	public void setServiceCode(String serviceCode) {
 		this.serviceCode = serviceCode;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getServiceName() {
 		return serviceName;
 	}
 
+	/**
+	 * @param serviceName
+	 */
 	public void setServiceName(String serviceName) {
 		this.serviceName = serviceName;
 	}
-	//-------------------------------------------------------------------------
+	
 }
-//-----------------------------------------------------------------------------
-//End of file
-//-----------------------------------------------------------------------------

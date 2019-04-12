@@ -21,48 +21,52 @@
  * 10-Apr-2019	1.0			Akshay		Initial Version.
  * ____________________________________________________________________________
 */
-//-----------------------------------------------------------------------------
+
 package com.logixal.lobs.masters.model;
-//-----------------------------------------------------------------------------
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.logixal.lobs.audit.Auditable;
-//-----------------------------------------------------------------------------
+
 @Table(name = "MST_LOBS_PROPERTIES")
 @Entity
-public class 
-	LobsProperties
-extends
-	Auditable<String>
-{
-	//-------------------------------------------------------------------------
-    @Id
+public class LobsProperties extends Auditable<String> {
+    
+	@Id
     @Column(name = "PROP_CODE")
     private String propCode;
 
     @Column(name = "PROP_VALUE")
     private String propValue;
-    //-------------------------------------------------------------------------
+    
+	/**
+	 * @return 
+	 */
 	public String getPropCode() {
 		return propCode;
 	}
 
+	/**
+	 * @param propCode
+	 */
 	public void setPropCode(String propCode) {
 		this.propCode = propCode;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getPropValue() {
 		return propValue;
 	}
 
+	/**
+	 * @param propValue
+	 */
 	public void setPropValue(String propValue) {
 		this.propValue = propValue;
 	}
-    //-------------------------------------------------------------------------
 }
-//-----------------------------------------------------------------------------
-// End of file
-//-----------------------------------------------------------------------------
