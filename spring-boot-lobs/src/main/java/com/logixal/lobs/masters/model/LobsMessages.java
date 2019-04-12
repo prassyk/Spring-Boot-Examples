@@ -21,9 +21,8 @@
  * 10-Apr-2019	1.0			Akshay		Initial Version.
  * ____________________________________________________________________________
 */
-
 package com.logixal.lobs.masters.model;
-//-----------------------------------------------------------------------------
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -33,36 +32,40 @@ import com.logixal.lobs.audit.Auditable;
 
 @Table(name = "LOBS_MESSAGES")
 @Entity
-public class 
-	LobsMessages
-extends
-	Auditable<String>
-{
-	//-------------------------------------------------------------------------
+public class LobsMessages extends Auditable<String> {
+	
     @Id
     @Column(name = "LOBS_MESSAGE_CODE")
     private String messageCode;
 
     @Column(name = "LOBS_MESSAGE_NAME")
     private String messageName;
-    //-------------------------------------------------------------------------
+    
+	/**
+	 * @return
+	 */
 	public String getMessageCode() {
 		return messageCode;
 	}
 
+	/**
+	 * @param messageCode
+	 */
 	public void setMessageCode(String messageCode) {
 		this.messageCode = messageCode;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getMessageName() {
 		return messageName;
 	}
 
+	/**
+	 * @param messageName
+	 */
 	public void setMessageName(String messageName) {
 		this.messageName = messageName;
 	}
-    //-------------------------------------------------------------------------
 }
-//-----------------------------------------------------------------------------
-// End of file
-//-----------------------------------------------------------------------------
