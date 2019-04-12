@@ -7,6 +7,6 @@ import com.logixal.lobs.tpp.model.TPPUserService;
 import com.logixal.lobs.tpp.model.TPPUserServiceId;
 
 @Repository
-public interface TPPUserServiceRepositroy extends JpaRepository<TPPUserService, TPPUserServiceId>{
+public interface TPPUserServiceRepository extends JpaRepository<TPPUserService, TPPUserServiceId>{
 
 }
